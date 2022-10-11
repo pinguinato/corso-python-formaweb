@@ -1,0 +1,64 @@
+********************************
+CORSO ANALISI DEI DATI - PYTHON
+********************************
+
+-----
+GLM
+-----
+
+- Se le variabili (i tipi di dati) sono continue bisogna usare la regressione lineare: il dominio è -inf/+inf 
+- Se le variabili sono "categoriche" (es. binarie) si usa una "binomiale"
+- Se "Count" (variaibili discrete) allora usiamo la distribuzione di Poisson
+- La funzione di collegamento (link) trasforma il valore atteso di y
+
+Come facciamo?
+
+Si importano le api di statsmodel --> import statsmodels.api
+e poi si importa il modello di processo (vedi slide lezione 10)
+
+Sul modello si invoca il metodo .fit() --> questo farà si che qui vengano calcolati i parametri.
+Poi si può invocare .summary() per avere i risultati di generazione del modello.
+Il metodo summary riporta uno specchietto riassuntivo di come si è arrivati ad esprimere quel modello.
+
+Il "fitting" altro non è che trovare tra tutti i parametri possibili quelli che minimizzano la funzione di costo,
+però si possono usare anche altri criteri per valutare due tpologie di modelli. 
+
+Alla fine di tutto andiamo a fare delle "predizioni" servendoci di .predict().
+
+Descrivere il modello:
+- basandoci sulla formula
+- basandoci sul modello
+
+l'attributo .paraams ritorna i coefficienti della regressione.
+
+- dati binari:
+-- raggruppati (un singolo evento)
+-- non raggruppati (più eventi elementari)
+
+esempio: funzione logistica
+
+Odds ->  è diverso dalla probabilità
+
+https://www.treccani.it/enciclopedia/variabile-esplicativa_(Enciclopedia-della-Matematica)/
+
+- Matrice di consusione
+
+Argomenti di esame:
+- l'ultima lezione non è contemplata nelle cose da studiare per l'esame
+- argomentidi interesse:
+	- media finestra mobile
+	- metodo sort values
+	- hanscombe
+	- coefficente di Pearson -> il coefficente di correlazione di pearson 
+	- picciei (psa) -> il numero di componenti ricavate sia sempre inferiore al numero di variabili prese in esame
+	la compoenente principale è parallelea ad una componente dei dati -> no, perchè non ha senso farla
+	- retta di regressione lineare
+	- albero di decisione binaria
+	- metodo hist() (istogrammi)
+	- domanda su serie di date (time series)
+	- seme del generatore pseudocasuale in python
+	- la media a finestra mobile filtra le basse frequenza (falso)
+	- la media è insensibile ai cambiamenti rempentini (vero)
+	- le 4 distro di Hanscombe 
+	
+

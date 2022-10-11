@@ -1,0 +1,9 @@
+----------------------
+Lezione 7 - 14/12/2020
+----------------------
+
+Corso di Python e Analisi dei dati
+
+Applicare la tecnica dello Spplit - Apply - Combine al file degli ospedali
+
+Dove si fa un raggruppamento si deve fare una operazione di gruppo

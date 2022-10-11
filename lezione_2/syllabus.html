@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Elementi di Programmazione con Python e Analisi dei Dati</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+body {
+background-color: #ffffe6;
+font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%; 
+max-height: 100%;
+}
+
+#framecontent{
+position: absolute; 
+bottom: 0; 
+left: 0; 
+width: 100%; 
+height: 75px; /*Height of frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background: navy;
+color: white;
+font-size: 12px;
+}
+
+#maincontent{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 75px; /*Set bottom value to HeightOfFrameDiv*/
+overflow: auto; 
+background: #ffffe6;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+* html body{ /*IE6 hack*/
+padding: 0 0 130px 0; /*Set value to (0 0 HeightOfFrameDiv 0)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background: navy;
+  color: white;
+}
+
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #e6f2ff;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: navy;
+}
+
+</style>
+</head>
+<body>
+<div id="maincontent">
+<div class="innertube">
+<h1>Elementi di Programmazione con Python e Analisi dei Dati</h1>
+
+<div class="row">
+  <div class="column">
+    <p><i>Ratio numerorum contemnenda non est. In multis enim sanctarum scripturarum locis quantum mysterium habent elucet. Non enim frustra in laudibus Dei dictum est: "Omnia in mensura et numero et pondere fecisti".</i>
+</p>
+<p>
+Docente: <b>Stefano Andreozzi, PhD</b><br>
+WhatsApp: <a href="https://wa.me/393286489157" target="_blank">328 64 89 157</a><br>
+email: <a href="mailto:stefano.andreozzi@gmail.com?subject=corso%20pyad%202020">stefano.andreozzi@gmail.com</a><br>
+<font color="red"><b>(usare in caso di stretta necessità, non abusare!)</b></font>
+</p>
+<p>
+<a href="https://www.accademiaformaweb.it/corsi/corso-programmazione-python/" target="_blank">Accademia Formaweb</a>
+<br>
+Via Venarìa, 37/c - 10148 Torino (TO)
+</p>
+<p>
+<h4>Riferimenti</h4>
+<dl>
+<dt>[McKinney2017]</dt><dd><b>W. McKinney, <i>Python for Data Analysis</i>, 2nd edition, O'Reilly, 2017</b>.<br><a href="https://www.oreilly.com/library/view/python-for-data/9781491957653/" target="_blank">info</a> | <a href="https://github.com/wesm/pydata-book" target="_blank">codice</a></dd>
+<dt>[Grus2015]</dt><dd><b>J. Grus, <i>Data Science from Scratch</i>, O'Reilly, 2015</b>.<br><a href="https://www.oreilly.com/library/view/data-science-from/9781491901410/" target="_blank">info</a> | <a href="https://github.com/joelgrus/data-science-from-scratch" target="_blank">codice</a></dd>
+<dt>[Downey2014]</dt><dd><b>A. B. Downey, <i>Think Stats</i>, 2nd edition, Green Tea Press, 2014</b>.<br><a href="http://greenteapress.com/thinkstats2/thinkstats2.pdf" target="_blank">scarica</a> | <a href="https://greenteapress.com/wp/think-stats-2e/" target="_blank">info</a> | <a href="https://github.com/AllenDowney/ThinkStats2" target="_blank">codice</a></dd>
+</p>
+<p>
+<h4>Approfondimenti</h4>
+<dt>[James2017]</dt><dd><b>G. James, D. Witten, T. Hastie and R. Tibshirani, <i>An Introduction to Statistical Learning</i>, Springer, 2017</b>.<br>Liberamente scaricabile <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/" target="_blank">qui</a>.<br>
+Il libro è basato su R, ma Ted Petrou <a href="https://github.com/tdpetrou/Machine-Learning-Books-With-Python/tree/master/Introduction%20to%20Statistical%20Learning" target="_blank">ha riscritto la quasi totalità degli esercizi del testo in Python</a>.</dd></dl>
+</p>
+  </div>
+  <div class="column">
+  <h4>Programma (provvisorio)</h4>
+        <table>
+  <tr>
+    <th>Lezione</th>
+    <th>Contenuti</th>
+    <th>Riferimenti</th>
+  </tr>
+  <tr>
+    <td>1. Lunedì 23 novembre, 18:30-21:30</td>
+    <td>Accoglienza. Introduzione e buone pratiche, analista dei dati, caratteristiche di Python. Basi del linguaggio, tipi di dato, strutture dati, iterazioni.
+</td>
+    <td>[Grus2015] ch. 1,2; [McKinney2017] ch. 2,3</td>
+  </tr>
+  <tr>
+    <td>2. Mercoledì 25 novembre, 18:30-21:30</td>
+    <td>Oggetto array, indicizzazione, metodi. Alcuni richiami di algebra. Random, metodo Monte Carlo, elementi di statistica descrittiva. Complessità computazionale.
+</td>
+    <td>[Grus2015] ch. 4,5; [McKinney2017] ch. 4</td>
+  </tr>
+  <tr>
+    <td>3. Lunedì 30 novembre, 18:30-21:30</td>
+    <td>Series, dataframe, lettura da csv, json, SQL, valori mancanti. Slicing, selecting, extracting; formati testo ed Excel, groupby, sorting. Quartetto di Anscombe, correlazione, PCA, normalizzazione.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>4. Mercoledì 2 dicembre, 18:30-21:30</td>
+    <td>Esercizi Pandas. Groupby, indicizzazione. Lettura e scrittura formati testo.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>5. Lunedì 7 dicembre, 18:30-21:30</td>
+    <td>Indicizzazione gerarchica, unione di dataset, rimodellazione e pivoting. Espressioni regolari.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>6. Mercoledì 9 dicembre, 18:30-21:30</td>
+    <td>Scraping: BeautifulSoup, quantizzazione; operazioni su stringhe, cenni tag HTML. Visualizzazione: Matplotlib, Pandas e Seaborn.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>7. Lunedì 14 dicembre, 18:30-21:30</td>
+    <td>Split-apply-combine; Groupby; aggregazione dei dati.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>8. Mercoledì 16 dicembre, 18:30-21:30</td>
+    <td>Split-apply-combine: quantile and bucket analysis. Campionamento e permutazione; media pesata e correlazione. Cross-tabulazione. Serie temporali: tipi di dato, indicizzazione, intervalli, fuso orario.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>9. Lunedì 11 gennaio, 18:30-21:30</td>
+    <td>Funzioni finestra mobile. Regressione lineare. Regressione modello di Poisson.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>10. Mercoledì 13 gennaio, 18:30-21:30</td>
+    <td>GLM, regressione logistica, regressione logistica multivariabile. Alberi di classificazione binaria.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>11. Lunedì 18 gennaio, 18:30-21:30</td>
+    <td>Approfondimento ed esercizi su albero binario di classificazione. Reti neurali: percettrone, funzione sigma, funzione di attivazione, funzione di loss. MLN, back-propagation, esempio con Keras.
+</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>12. Mercoledì 20 gennaio, 18:30-20:30</td>
+    <td>Ripasso generale. Prova finale</td>
+    <td>...</td>
+  </tr>  
+</table>
+  </div>
+</div>
+</div>
+</div>
+<div id="framecontent">
+<div class="innertube">
+  <p>Tutti i diritti sono riservati. Qualsiasi riproduzione, anche parziale, senza autorizzazione scritta è vietata. Legge 633 del 22 Aprile 1941 e successive modifiche.</p>
+</div>
+</div>
+</body>
+</html>
